@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book an Appointment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="Images/imhg.jpg" alt="Barbershop Logo" />
+      </div>
+      <h1 class="site-name">1925 BARBER SHOP</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="book-now.html">Book Now</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="booking-form">
+      <h2>Book Your Appointment</h2>
+      <form id="bookingForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" required />
+
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="time">Preferred Time</label>
+        <input type="time" id="time" name="time" required />
+
+        <label for="barber">Choose Your Barber</label>
+        <select id="barber" name="barber" required>
+          <option value="">Select Barber</option>
+          <option value="Barber1">Vandan</option>
+          <option value="Barber2">Marvin</option>
+          <option value="Barber3">Alvin</option>
+          <option value="Barber4">Mark</option>
+          <option value="Barber5">Justin</option>
+          <option value="Barber6">Idol</option>
+        </select>
+
+        <button type="submit" class="btn">Submit Booking</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 1925 Barbershop Booking</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
